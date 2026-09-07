@@ -114,7 +114,7 @@ jobs:
           BUN_TARGET: ${{ matrix.target }}
         run: bun run smoke:binary
       - name: Upload binary package
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: swooshrouter-${{ matrix.target }}
           path: dist-binary
